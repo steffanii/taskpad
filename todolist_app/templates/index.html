@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  <title>Welcome To Taskmate</title>
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+    <div class="row mt-5">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="{% static 'images/timg1.jpg' %}" alt="Notes" class="img-fluid rounded-lg shadow-lg" style="width: 100%; height: 300px; object-fit: cover;">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="{% static 'images/timg2.jpg' %}" alt="Notes" class="img-fluid rounded-lg shadow-lg" style="width: 100%; height: 300px; object-fit: cover;">
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <img src="{% static 'images/timg3.jpg' %}" alt="Notes" class="img-fluid rounded-lg shadow-lg" style="width: 100%; height: 300px; object-fit: cover;">
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="row mt-5">
+        <div classs="col-md-10 offset-md-1">
+            <center><p class="h1 link-info">Quick And Easy To Use, Anytime, Anywhere!</P></center>
+            <center><P class="h2 mt-4">"PLan Your Day Better, Get YOur Life Organized"</p></center>
+            <center><P class="h4">TASKMATE Lets You Keep Track Of Your Task In One Place</p></center>
+        </div>
+    </div>
+
+    <center><a href=""><button type="button" class="btn btn-primary btn-lg mt-3">Let's Get Started</button></a></center>
+
+</div>
+{% endblock content %}
