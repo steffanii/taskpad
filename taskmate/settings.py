@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 import environ
+import dj_database_url
 
 
 env = environ.Env()
@@ -99,7 +100,7 @@ DATABASES = {
         'PORT': env("DJANGO_DB_PORT"),
     }
 }
-
+DATABASES["default"]==dj_database_url.parse("postgresql://root:KS8ZTakmYKcH0YMkopgpdmAWyBQR4tA7@dpg-csd11thu0jms73cntadg-a.oregon-postgres.render.com/test_database_d226")
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -136,6 +137,7 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+MEDIA_URL = 'media/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
