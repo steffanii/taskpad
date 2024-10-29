@@ -33,7 +33,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 DEBUG = env("DJANGO_DEBUG", cast=bool)
 
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "taskpad.render.app"]
-CSRF_TRUSTED_ORIGIN= ['taskpad.render.app']
+CSRF_TRUSTED_ORIGIN= ['https://taskpad.render.app']
 
 
 # Application definition
