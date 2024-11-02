@@ -9,10 +9,9 @@
     <div class = "container">
       <h1>{{task_obj.task}}</h1>
       {% if task_obj.manage ==  request.user%}
-        <form method="POST" class="row">
+        <form method="POST" class="row mt-3">
           {% csrf_token %} 
-          <div class="col-lg-2 ">
-            <label ></label>       
+          <div class="col-lg-7  ">
             <input type="text" class="form-control" name="task" id="task" placeholder={{task_obj.task}} value="{{task_obj.task}}">
             <input type="hidden" name="done" id="done" value="{{task_obj.done}}">
           </div>
